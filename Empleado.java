@@ -44,17 +44,5 @@ public class Empleado {
     public void set(Sucursal ) {
         this. = ;
     }
-    public void link(Sucursal _) {
-        if (_ != null) {
-            _.get().add(this);
-        }
-        unlink();
-        set(_);
-    }
-    public void unlink() {
-        if (get() != null) {
-            get().get().remove(this);
-            set(null);
-        }
-    }
+
 }

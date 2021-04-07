@@ -38,37 +38,5 @@ public class Movimiento {
     public void setMonto(float monto) {
         this.monto = monto;
     }
-    public void set(Cuenta ) {
-        this. = ;
-    }
-    public void set(Class1 ) {
-        this. = ;
-    }
-    public void link(Cuenta _) {
-        if (_ != null) {
-            _.get().add(this);
-        }
-        unlink();
-        set(_);
-    }
-    public void link(Class1 _) {
-        if (_ != null) {
-            _.unlink();
-            _.set(this);
-        }
-        unlink();
-        set(_);
-    }
-    public void unlink() {
-        if (get() != null) {
-            get().get().remove(this);
-            set(null);
-        }
-    }
-    public void unlink() {
-        if (get() != null) {
-            get().set(null);
-            set(null);
-        }
-    }
+
 }

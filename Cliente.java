@@ -29,9 +29,7 @@ public class Cliente {
     public String getNumero() {
         return numero;
     }
-    public Set<Cuenta> get() {
-        return ;
-    }
+
     public void setIdCliente(String idCliente) {
         this.idCliente = idCliente;
     }
@@ -49,24 +47,5 @@ public class Cliente {
     }
     public void setNumero(String numero) {
         this.numero = numero;
-    }
-    public void link(Cuenta _) {
-        if (_ != null) {
-            _.unlink();
-            _.set(this);
-            get().add(_);
-        }
-    }
-    public void unlink(Cuenta _) {
-        if (_ != null) {
-            _.set(null);
-            get().remove(_);
-        }
-    }
-    public void unlink(Cuenta _, Iterator<Cuenta> it) {
-        if (_ != null) {
-            _.set(null);
-            it.remove();
-        }
     }
 }
