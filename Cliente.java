@@ -10,7 +10,7 @@ public class Cliente {
     private String rfc;
     private String correo;
     private String numero;
-    private Set<Cuenta>  = new HashSet<>();
+    //private Set<Cuenta>  = new HashSet<>();
     public String getIdCliente() {
         return idCliente;
     }

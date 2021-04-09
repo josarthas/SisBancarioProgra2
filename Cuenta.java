@@ -6,7 +6,7 @@ public class Cuenta {
     private float saldo;
     private String clabe;
     private String tipo;
-    private Set<Movimiento>  = new HashSet<>();
+    //private Set<Movimiento>  = new HashSet<>();
     private Cuenta ;
     private Cuenta ;
     private Cliente ;

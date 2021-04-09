@@ -5,10 +5,10 @@ public class Sucursal {
     private String numSucursal;
     private String direccion;
     private String tipo;
-    private Set<Empleado>  = new HashSet<>();
+    //private Set<Empleado>  = new HashSet<>();
     private Sucursal ;
     private Sucursal ;
-    private Set<Cuenta>  = new HashSet<>();
+    //private Set<Cuenta>  = new HashSet<>();
     private Sucursal ;
     private Sucursal ;
     public String getNumSucursal() {
