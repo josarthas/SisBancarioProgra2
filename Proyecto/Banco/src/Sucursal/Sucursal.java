@@ -6,11 +6,10 @@ public class Sucursal {
     private String direccion;
     private String tipo;
     
-    public sucursal(String num, String dire, String type){
+    public Sucursal(String num, String dire, String type){
         num=numSucursal;
         dire=direccion;
         type=tipo;
-    
 }
 
     public String getNumSucursal() {
