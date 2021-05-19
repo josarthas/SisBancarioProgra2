@@ -1,13 +1,11 @@
-package Model;
-import java.util.*;
-import java.time.*;
+package sistemabancario;
+
 public class Empleado {
     private String idEmpleado;
     private String rfc;
     private String nombre;
     private String puesto;
     private String domicilio;
-    private Sucursal ;
     private String getIdEmpleado() {
         return idEmpleado;
     }
@@ -23,9 +21,7 @@ public class Empleado {
     public String getDomicilio() {
         return domicilio;
     }
-    public Sucursal get() {
-        return ;
-    }
+
     private void setIdEmpleado(String idEmpleado) {
         this.idEmpleado = idEmpleado;
     }
@@ -41,8 +37,4 @@ public class Empleado {
     public void setDomicilio(String domicilio) {
         this.domicilio = domicilio;
     }
-    public void set(Sucursal ) {
-        this. = ;
-    }
-
 }

@@ -1,20 +1,23 @@
-package Model;
+package sistemabancario;
 import java.util.*;
-import java.time.*;
 public class Cuenta {
     private String numeroDeCuenta;
-    private float saldo;
+    private double saldo;
     private String clabe;
     private String tipo;
-    //private Set<Movimiento>  = new HashSet<>();
-    private Cuenta ;
-    private Cuenta ;
-    private Cliente ;
-    private Sucursal ;
+    
+    
+        public Cuenta(String ID, double sald, String clab, String typo){
+        ID=numeroDeCuenta;
+        sald=saldo;
+        clab=clabe;
+        typo=tipo;
+    }
+    
     public String getNumeroDeCuenta() {
         return numeroDeCuenta;
     }
-    public float getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
     public String getClabe() {
