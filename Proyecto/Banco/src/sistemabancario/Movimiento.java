@@ -8,6 +8,10 @@ public class Movimiento {
     private LocalDate fecha;
     private float monto;
     
+    public Movimiento(String ID, String tipo, LocalDate fech, float monto){
+        
+}
+    
     public String getIdMovimiento() {
         return idMovimiento;
     }
@@ -18,11 +22,11 @@ public class Movimiento {
     public String setIdMovimiento(String idMovimiento) {
         this.idMovimiento = idMovimiento;
     }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public String getTipo() {
+        return tipo;
     }
-    public void setFecha(LocalDate fecha) {
-        this.fecha = LocalDate.now();
+    public LocalDate setFecha() {
+        return fecha;
     }
 
 }
