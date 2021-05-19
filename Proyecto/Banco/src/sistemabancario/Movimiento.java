@@ -19,8 +19,8 @@ public class Movimiento {
     public float getMonto() {
         return monto;
     }
-    public String setIdMovimiento(String idMovimiento) {
-        this.idMovimiento = idMovimiento;
+    public String setIdMovimiento() {
+        return idMovimiento;
     }
     public String getTipo() {
         return tipo;

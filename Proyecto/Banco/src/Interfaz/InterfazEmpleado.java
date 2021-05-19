@@ -10,8 +10,8 @@ public class InterfazEmpleado extends JFrame {
   
     public InterfazEmpleado(){
 
-        ArrayList<Cliente> datosClien = new ArrayList<Cliente>();
-        ArrayList<Sucursal> sucursalesBanco = new ArrayList<Sucursal>();
+        ArrayList<Cliente> datosClien = new ArrayList<>();
+        ArrayList<Sucursal> sucursalesBanco = new ArrayList<>();
         
         JFrame cuadroClien = new JFrame("Banco Central - Empleado");
         cuadroClien.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -69,3 +69,4 @@ public class InterfazEmpleado extends JFrame {
           sucursales.setVisible(true);  
         });
     }
+}

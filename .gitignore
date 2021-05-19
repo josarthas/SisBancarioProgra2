@@ -3,3 +3,4 @@ Ejercicios Clase/bin/
 *.jar
 /Proyecto/Banco/nbproject/private/
 /Proyecto/Banco/build/
+/Proyecto/Banco/dist/

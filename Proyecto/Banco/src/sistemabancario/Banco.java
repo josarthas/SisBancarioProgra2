@@ -1,7 +1,6 @@
 package sistemabancario;
 import Interfaz.*;
 import javax.swing.*;
-import sistemabancario.Cliente;
 
 public class Banco {
 
