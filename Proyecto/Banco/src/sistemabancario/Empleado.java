@@ -6,6 +6,8 @@ public class Empleado {
     private String nombre;
     private String puesto;
     private String domicilio;
+    
+    
     private String getIdEmpleado() {
         return idEmpleado;
     }
@@ -20,21 +22,5 @@ public class Empleado {
     }
     public String getDomicilio() {
         return domicilio;
-    }
-
-    private void setIdEmpleado(String idEmpleado) {
-        this.idEmpleado = idEmpleado;
-    }
-    private void setRfc(String rfc) {
-        this.rfc = rfc;
-    }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
-    }
-    public void setDomicilio(String domicilio) {
-        this.domicilio = domicilio;
     }
 }
