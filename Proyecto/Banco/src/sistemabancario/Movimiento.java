@@ -1,21 +1,21 @@
 package sistemabancario;
-import Interfaz.*;
 import java.time.*;
 
 public class Movimiento {
     private String idMovimiento;
     private String tipo;
-    private LocalDate fecha;
+    private final LocalDate fecha;
     private float monto;
     
-    public Movimiento(String ID, String tipo, LocalDate fech, float monto){
-        
-}
-    
+    public Movimiento(String ID, String tipos, LocalDate fech, float mont){
+        idMovimiento=ID;
+        tipo=tipos;
+        fecha=fech;
+        monto=mont;
+    }
     public String getIdMovimiento() {
         return idMovimiento;
     }
-
     public float getMonto() {
         return monto;
     }
@@ -25,8 +25,7 @@ public class Movimiento {
     public String getTipo() {
         return tipo;
     }
-    public LocalDate setFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
-
 }

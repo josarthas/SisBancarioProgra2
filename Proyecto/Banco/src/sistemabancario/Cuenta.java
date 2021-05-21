@@ -1,19 +1,17 @@
 package sistemabancario;
-import java.util.*;
+
 public class Cuenta {
     private String numeroDeCuenta;
     private double saldo;
     private String clabe;
     private String tipo;
-    
-    
+        
         public Cuenta(String ID, double sald, String clab, String typo){
-        ID=numeroDeCuenta;
-        sald=saldo;
-        clab=clabe;
-        typo=tipo;
-    }
-    
+        numeroDeCuenta=ID;
+        saldo=sald;
+        clabe=clab;
+        tipo=typo;
+    }    
     public String getNumeroDeCuenta() {
         return numeroDeCuenta;
     }

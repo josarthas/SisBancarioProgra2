@@ -1,17 +1,15 @@
 package Sucursal;
 
-
 public class Sucursal {
-    private String numSucursal;
-    private String direccion;
-    private String tipo;
+    private final String numSucursal;
+    private final String direccion;
+    private final String tipo;
     
     public Sucursal(String num, String dire, String type){
-        num=numSucursal;
-        dire=direccion;
-        type=tipo;
-}
-
+        numSucursal=num;
+        direccion=dire;
+        tipo=type;
+    }
     public String getNumSucursal() {
         return numSucursal;
     }

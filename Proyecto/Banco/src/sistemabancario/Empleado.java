@@ -7,11 +7,17 @@ public class Empleado {
     private String puesto;
     private String domicilio;
     
-    
-    private String getIdEmpleado() {
+    public Empleado(String ID, String nRFC, String nom, String puest, String dom){
+        idEmpleado=ID;
+        rfc=nRFC;
+        nombre=nom;
+        puesto=puest;
+        domicilio=dom;
+    }   
+    public String getIdEmpleado() {
         return idEmpleado;
     }
-    private String getRfc() {
+    public String getRfc() {
         return rfc;
     }
     public String getNombre() {

@@ -74,7 +74,7 @@ public class InterfazEmpleado extends JFrame {
             System.out.println(dtsClin[0]);
             int tamarray=datosClien.size();
             System.out.println(tamarray);
-            System.out.println(dtsClin[0]);
+            System.out.println(dtsClin[1]);
         });
         
         sucursal.addActionListener((ActionEvent e) -> {
