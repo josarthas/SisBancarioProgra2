@@ -11,13 +11,13 @@ public class Cliente {
     private String passwd;
     
     public Cliente(String ID, String nom, String dir, String rfcc, String corr, String num, String pssswd){
-        ID=idCliente;
-        nom=nombre;
-        dir=direccion;
-        rfcc=rfc;
-        corr=correo;
-        num=numero;
-        pssswd=passwd;
+        idCliente=ID;
+        nombre=nom;
+        direccion=dir;
+        rfc=rfcc;
+        correo=corr;
+        numero=num;
+        passwd=pssswd;
     }
 
     public String getIdCliente() {

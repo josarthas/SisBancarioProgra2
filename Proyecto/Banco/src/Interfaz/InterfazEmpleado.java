@@ -5,6 +5,7 @@ import java.util.*;
 import javax.swing.*;
 import sistemabancario.Cliente;
 import Sucursal.Sucursal;
+import java.io.*;
 
 public class InterfazEmpleado extends JFrame {
   
@@ -24,6 +25,7 @@ public class InterfazEmpleado extends JFrame {
         JFrame sucursales = new JFrame("Banco Central - Sucursales");
         JList sucursBanco = new JList(sucursalesBanco.toArray());
         DefaultListModel modelo = new DefaultListModel();
+        
         for(int i = 0; i<sucursalesBanco.size();i++){
         modelo.addElement(sucursalesBanco.get(i).getNumSucursal());
         modelo.addElement(sucursalesBanco.get(i).getDireccion());
@@ -35,11 +37,13 @@ public class InterfazEmpleado extends JFrame {
         sucursales.setSize(480, 360);
         
         JButton nuevoCliente= new JButton("Añadir Cliente");
+        JButton verClientes= new JButton("Ver Clientes");
         JButton sucursal= new JButton("Ver Sucursales");
 
         JPanel panel1 = new JPanel();
         
         panel1.add(nuevoCliente);
+        panel1.add(verClientes);
         panelsuc.add(sucursal);
         panelsuc.add(nuevaSucursal);
         cuadroClien.getContentPane().add(BorderLayout.NORTH, panel1);
@@ -63,6 +67,14 @@ public class InterfazEmpleado extends JFrame {
             String direc = JOptionPane.showInputDialog ("Introduzca Direccion de Sucursal");
             String tipos = JOptionPane.showInputDialog ("Introduzca tipo (Cajero/ATM)");
             sucursalesBanco.add(new Sucursal(numbe,direc,tipos)); 
+        });
+        
+        verClientes.addActionListener((ActionEvent e) -> {
+            Object[] dtsClin = datosClien.toArray();
+            System.out.println(dtsClin[0]);
+            int tamarray=datosClien.size();
+            System.out.println(tamarray);
+            System.out.println(dtsClin[0]);
         });
         
         sucursal.addActionListener((ActionEvent e) -> {
