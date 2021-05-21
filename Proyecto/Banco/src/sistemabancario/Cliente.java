@@ -1,7 +1,8 @@
 package sistemabancario;
 
 import java.util.*;
-
+import javax.swing.*;
+import interfaz;
 public class Cliente {
 
     //los elementos son privados
@@ -22,6 +23,7 @@ public class Cliente {
         correo=corr;
         numero=num;
         passwd=pssswd;
+        
     }
     //se automatiza el ID, se le manda el ultimo id y se le suma 1
     public static int setIDCliente(int idc){
@@ -33,8 +35,7 @@ public class Cliente {
     public int getIdCliente() {
         return idCliente;
     }
-    public String getNombre() {
-        
+    public String getNombre() {        
         return nombre;
     }
     public String getDireccion() {
@@ -95,7 +96,8 @@ public class Cliente {
         System.out.println("\nCree contraseña cliente: ");
         String passw = sc.next();
         Cliente clien=new Cliente(antid, nom, dir, rfc2, email, numbs, passw);
-        
+        System.out.println(clien.getNombre());
         return clien;
     }
+
 }

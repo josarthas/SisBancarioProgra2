@@ -5,7 +5,6 @@ import java.util.*;
 import javax.swing.*;
 import sistemabancario.Cliente;
 import Sucursal.Sucursal;
-import java.io.*;
 
 public class InterfazEmpleado extends JFrame {
   
