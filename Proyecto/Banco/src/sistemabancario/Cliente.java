@@ -88,9 +88,9 @@ public class Cliente {
                         
         }
         catch(InputMismatchException alt){
-            System.out.print("\nError de formato"+alt+", ingrese numero correcto: ");
-            int numb = sc.nextInt();
-            numbs = Integer.toString(numb);
+            System.out.print("\nError de formato: " + alt + ", ingrese numero correcto: ");
+            long numb = sc.nextLong();
+            numbs = Long.toString(numb);
         }
         System.out.println("\nCree contraseña cliente: ");
         String passw = sc.next();
